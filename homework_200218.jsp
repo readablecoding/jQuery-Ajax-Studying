@@ -19,9 +19,11 @@
 			var str ="";
 			str += "<tr><td>"
 			str += id;
-			str += "&nbsp;";
+			str += "</td>";
+			str += "<td>";
 			str += name;
-			str += "&nbsp;"; 
+			str += "</td>"; 
+			str += "<td>";
 			str += food;
 			str += "</td></tr>"
 
@@ -32,9 +34,13 @@
 </head>
 <body>
 	
-	<b>아이디&nbsp;이름&nbsp;종류</b>
+	
 	<table id="getter">
-		
+		<tr>
+			<th>아이디</th>
+			<th>이름</th>
+			<th>종류</th>
+		</tr>	
 	</table>
 	<hr>
 	아이디 : <input type="text" id="id"><br/>

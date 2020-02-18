@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <title>[아이디, 이름, 종류 값 가져오기]</title>
 <script src="<c:url value='/resources/jquery-3.4.1.js'/>"></script>
-<script type="text/javascript">
+<script>
 	$(function (){
 		$("#register").click(function (){
 			var getter = $("#getter");

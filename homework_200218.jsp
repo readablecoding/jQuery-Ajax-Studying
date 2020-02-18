@@ -40,7 +40,7 @@
 	아이디 : <input type="text" id="id"><br/>
 	이름 : <input type="text" id="name"><br/>
 	종류 : 
-	<input type="radio" name="food" value="부먹">부먹
+	<input type="radio" name="food" value="부먹" checked="checked">부먹
 	<input type="radio" name="food" value="찍먹">찍먹
 	<input type="radio" name="food" value="둘다">둘다<br/>
 	

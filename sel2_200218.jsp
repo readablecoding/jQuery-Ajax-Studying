@@ -61,7 +61,7 @@
 	
 	<h2 id="sel1">a[href] : a 태그이면서 href 속성을 갖는 것</h2>
 	<h2 id="sel2">a[href='https://www.naver.com'] : a 태그이면서 href 속성이 https://www.naver.com 인 것</h2>
-	<h2 id="sel3">a[href$='com'] : a 태그이면서 href 속성이 .com으로  끝나는 것</h2>
+	<h2 id="sel3">a[href$='.com'] : a 태그이면서 href 속성이 .com으로  끝나는 것</h2>
 	<h2 id="sel4">a[href*='goo'] : a 태그이면서 href 속성이 goo를 포함하는 것</h2>
 	<h2 id="sel5">a[href^='https'] : a 태그이면서 href 속성이 https로 시작하는 것</h2>
 	<h2 id="sel6">a[name~='test'] : a 태그이면서 name 속성이 test로 시작하는 것(공백 포함)</h2>

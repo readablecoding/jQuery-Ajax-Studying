@@ -16,12 +16,12 @@
 			var name = $("#name").val();
 			var food = $(":radio:checked").val();
 		
-			var str ='';
+			var str ="";
 			str += "<tr><td>"
 			str += id;
-			str += '&nbsp;';
+			str += "&nbsp;";
 			str += name;
-			str += '&nbsp;'; 
+			str += "&nbsp;"; 
 			str += food;
 			str += "</td></tr>"
 

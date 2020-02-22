@@ -62,7 +62,7 @@
 			$.ajax({					//key : value로 구성됨
 				url: "test5",			//url은 서버에 보내는 요청 주소
 				type: "post",			//type은 데이터 전송 방식, get과 post가 있다. JSON타입은 post로 보내기
-				dateType: "json", //서버에서 전달받는 데이터 타입, json타입으로 전달받을 것이다.
+				dataType: "json", //서버에서 전달받는 데이터 타입, json타입으로 전달받을 것이다.
 				data: $("#test5").serialize(), //폼 태그 자체를 문서객체로 가져와 serialize()를 통해 
 				success: function(result) { //ArrayList가 배열 형태로 jsp로 전달
 					console.log(result); 

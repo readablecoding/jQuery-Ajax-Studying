@@ -1,39 +1,26 @@
-package com.moneybook.mb.dao;
+package com.sesoc.moneybook.dao;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.moneybook.mb.vo.Member;
+import com.sesoc.moneybook.vo.MemberVO;
 
 @Repository
 public class MemberDAO {
-
+	
 	@Autowired
 	private SqlSession session;
 	
-	
-	public int memberInsert(Member member) {
-		int cnt = 0;
-		try {
-			MemberMapper mapper = session.getMapper(MemberMapper.class);
-			cnt = mapper.memberInsert(member);
-		}
-		catch(Exception e) {
-			e.printStackTrace();
-		}
-		return cnt;
+	//회원가입
+	public int signup(MemberVO vo) {
+		MemberMapper mapper = session.getMapper(MemberMapper.class);
+		return mapper.signup(vo);	
 	}
 	
-	public Member memberSelectOne(String userid) {
-		Member member = null;
-		try {
-			MemberMapper mapper = session.getMapper(MemberMapper.class);
-			member = mapper.memberSelectOne(userid);
-		}
-		catch(Exception e) {
-			e.printStackTrace();
-		}
-		return member;
+	//로그인
+	public int login(MemberVO vo) {
+		MemberMapper mapper = session.getMapper(MemberMapper.class);
+		return mapper.login(vo);
 	}
 }

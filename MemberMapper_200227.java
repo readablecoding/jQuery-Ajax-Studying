@@ -1,11 +1,12 @@
-package com.moneybook.mb.dao;
+package com.sesoc.moneybook.dao;
 
-import com.moneybook.mb.vo.Member;
+import com.sesoc.moneybook.vo.MemberVO;
 
 public interface MemberMapper {
 	
-	public int memberInsert(Member member);
+	//회원가입
+	public int signup(MemberVO vo);
 	
-	public Member memberSelectOne(String userid);
-	
+	//로그인
+	public int login(MemberVO vo);
 }

@@ -4,11 +4,12 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.moneybook.mb.vo.Member" alias="member"/>
-		<typeAlias type="com.moneybook.mb.vo.Info" alias="info"/>
+		<typeAlias type="com.sesoc.moneybook.vo.MemberVO" alias="MemberVO"/>
+		<typeAlias type="com.sesoc.moneybook.vo.MoneybookVO" alias="MoneybookVO"/>
 	</typeAliases>
+
 	<mappers>
-		<mapper resource="mapper/memberMapper.xml" />
-		<mapper resource="mapper/infoMapper.xml" />
+		<mapper resource="mapper/memberMapper.xml"/>
+		<mapper resource="mapper/moneybookMapper.xml"/>
 	</mappers>
 </configuration>
